@@ -1,7 +1,13 @@
 <div *ngIf="hero">
   <button (click)="goBack()">go back</button>
   <h2>{{hero.name | uppercase}} Details</h2>
+  <div><img style="width: 100px; height: 100px;" src="{{hero.img}}"/> </div>
   <div><span>id: </span>{{hero.id}}</div>
+  <div><span>Strenght: </span>  {{hero.strenght}}</div>
+  <div><span>Manacost: </span>  {{hero.manacost}}</div>
+  <div><span>Vie: </span>  {{hero.life}}</div>
+  <div><span>Type: </span>  {{hero.type}}</div>
+  <div><span>Effect: </span>  {{hero.effect}}</div>
   <div>
     <label>name:
       <input [(ngModel)]="hero.name" placeholder="name"/>
