@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
             [19.3956393810065, 47.168464955013],
             'EPSG:900913'
           ),
-          zoom: 4
+          zoom: 2
         }),
         layers: [
           new MangolLayer({
@@ -40,10 +40,10 @@ export class HomeComponent implements OnInit {
             })
           }),
           new MangolLayerGroup({
-            name: 'Overlays',
+            name: 'Earth',
             children: [
               new MangolLayer({
-                name: 'Roads',
+                name: 'Country',
                 layer: new TileLayer({
                   source: new TileWMS({
                     url:
@@ -60,10 +60,10 @@ export class HomeComponent implements OnInit {
                 })
               }),
               new MangolLayerGroup({
-                name: 'Coutries & Cities',
+                name: 'Country & Cities',
                 children: [
                   new MangolLayer({
-                    name: 'Country borders',
+                    name: 'Top 100',
                     details:
                       'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                     layer: new TileLayer({
@@ -76,7 +76,20 @@ export class HomeComponent implements OnInit {
                     })
                   }),
                   new MangolLayer({
-                    name: 'Populated places',
+                    name: 'Random',
+                    details:
+                      'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                    layer: new TileLayer({
+                      source: new TileJSON({
+                        url:
+                          'https://api.tiles.mapbox.com/v3/mapbox.world-borders-light.json?secure',
+                        crossOrigin: 'anonymous'
+                      }),
+                      visible: true
+                    })
+                  }),
+                  new MangolLayer({
+                    name: 'Most viewed',
                     layer: new TileLayer({
                       source: new TileWMS({
                         url:
@@ -100,13 +113,13 @@ export class HomeComponent implements OnInit {
       sidebar: {
         collapsible: true,
         opened: true,
-        title: 'Layertree example',
+        title: 'Menu',
         mode: 'side',
         toolbar: {
           layertree: {
             active: true,
             disabled: false,
-            title: 'Layers',
+            title: 'Options',
             details: {
               opacity: {
                 sliderStep: 1,
