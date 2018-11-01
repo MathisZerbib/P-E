@@ -28,12 +28,34 @@ export class HomeComponent implements OnInit {
             [19.3956393810065, 47.168464955013],
             'EPSG:900913'
           ),
-          zoom: 2
+          zoom: 2,
+          enableRotation: true,
         }),
+        controllers: {
+          zoom: {
+            show: true
+          },
+          position: {
+            show: true,
+            precision: 2,
+            dictionary: {
+              copyCoordinates: 'Copy coordinates',
+              textCopied: 'Copied',
+              closeSnackbar: 'Close'
+            }
+          },
+          rotation: {
+            show: true,
+            dictionary: {
+              rotateToNorth: 'Rotate to North'
+            },
+            showTooltip: true
+          }
+        },
         layers: [
           new MangolLayer({
-            name: 'OpenStreetMap Layer',
-            details: 'Here are the OSM layer details',
+            name: 'Top 100',
+            details: 'The best of all of time',
             layer: new TileLayer({
               source: new OSM(),
               visible: true
