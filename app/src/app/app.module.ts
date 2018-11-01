@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
 import { MangolModule } from 'mangol';
 import {MatCardModule} from '@angular/material/card';
-
+import { HttpClientModule }    from '@angular/common/http';
 
 
 
@@ -31,7 +31,8 @@ import {MatCardModule} from '@angular/material/card';
     MatMenuModule,
     MatVideoModule,
     MangolModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
