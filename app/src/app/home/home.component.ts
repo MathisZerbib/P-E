@@ -209,7 +209,7 @@ export class HomeComponent implements OnInit {
         collapsible: true,
         opened: true,
         title: 'Menu',
-        mode: 'side',
+        mode: 'push',
         toolbar: {
           layertree: {
             active: true,

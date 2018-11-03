@@ -3,13 +3,27 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule, MatMenuModule} from '@angular/material';
 import { MatVideoModule } from 'mat-video';
 import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
 import { MangolModule } from 'mangol';
-import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule }    from '@angular/common/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+import {
+  MatToolbarModule,
+  MatButtonModule,
+  MatMenuModule,
+  MatCheckboxModule,
+  MatSidenavModule,
+  MatIconModule,
+  MatListModule,
+  MatCardModule,
+
+
+} from '@angular/material';
+import { OverheighteenComponent } from './overheighteen/overheighteen.component';
+
 
 
 
@@ -19,7 +33,8 @@ import { HttpClientModule }    from '@angular/common/http';
   declarations: [
     AppComponent,
     HomeComponent,
-    PostsComponent
+    PostsComponent,
+    OverheighteenComponent
 
   ],
   imports: [
@@ -32,7 +47,13 @@ import { HttpClientModule }    from '@angular/common/http';
     MatVideoModule,
     MangolModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

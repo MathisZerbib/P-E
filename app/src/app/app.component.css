@@ -1,0 +1,13 @@
+.example-icon {
+  padding: 0 6px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+a{
+color: white;
+text-decoration: none;
+
+}

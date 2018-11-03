@@ -60,3 +60,13 @@ h4 {
     min-width: 60px;
   }
 }
+
+.inventory-body {
+
+  min-width: 100%;
+  background-image: url("../../assets/img/fond.png");
+
+
+
+  background-size: cover;
+}

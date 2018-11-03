@@ -1,0 +1,201 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+/************
+ * BADGES
+ ************/
+
+.notifications-badge {
+  height: 22px;
+  width: 22px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 600;
+  top: 2px;
+  right: 6px;
+  background-color: #ff4081;
+}
+
+.mdl-badge.mdl-badge--overlap:after {
+  right: 2px;
+  top: -19px;
+}
+
+.mdl-badge.mdl-badge--overlap {
+  margin-right: 21px; }
+
+.md-button md-badge {
+  margin: 0 0 0 8px;
+  color: white;
+  padding: 4px;
+  border-radius: 50%;
+  background-color: #ff4081;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  height: 22px;
+  width: 22px; }
+
+.menu-badge {
+  color: #ff4081; }
+
+
+/* End Badges */
+
+/************
+ * LEFT NAVIGATION MENU
+ ************/
+
+.docs-menu,
+.docs-menu ul {
+  list-style: none;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.docs-menu li {
+  margin: 0;
+}
+
+.docs-menu > li:nth-child(1) {
+  border-top: none;
+}
+
+.md-whiteframe-glow-z1 {
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 0px 2px 2px rgba(0, 0, 0, 0.098), 0px 0px 5px 1px rgba(0, 0, 0, 0.084);
+}
+
+.docs-menu .md-button {
+  border-radius: 0;
+  /*color: white;*/
+  cursor: pointer;
+  display: block;
+  align-items: inherit;
+  line-height: 40px;
+  margin: 0;
+  max-height: 40px;
+  overflow: hidden;
+  padding: 0 16px;
+  text-align: left;
+  text-decoration: none;
+  white-space: normal;
+  width: 100%;
+}
+
+html[dir=rtl] .docs-menu .md-button,
+body[dir=rtl] .docs-menu .md-button {
+  unicode-bidi: embed;
+  text-align: right;
+}
+
+.docs-menu .md-button:hover,
+.docs-menu .md-button:focus {
+  /*background: #267ED5 !important;*/
+  background: #eeeeee !important;
+}
+
+.docs-menu .md-button md-icon {
+  /*color: white;*/
+  color: #616161;
+  margin-right: 5px;
+}
+
+.docs-menu md-select {
+  /* Override md-select margins.  With margins the menu will look incorrect and causes mobile list
+    to not be scrollable.
+  */
+  margin: 0;
+  width: 100%;
+}
+
+.docs-menu md-select md-select-label {
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.docs-menu md-select md-select-label span {
+  margin-right: auto;
+  padding-left: 13px;
+}
+
+.docs-menu md-select .md-select-icon {
+  margin-right: 28px;
+}
+
+.docs-menu button.md-button::-moz-focus-inner {
+  padding: 0;
+}
+
+
+/*.docs-menu .md-button.active {
+    background: #267ED5;
+}*/
+
+.menu-toggle-list {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
+  -webkit-transition-property: height;
+  -moz-transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
+  -moz-transition-property: height;
+  transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
+  transition-property: height;
+}
+
+.docs-menu .menu-toggle-list a.md-button {
+  display: block;
+  padding: 0 16px 0 45px;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  font-weight: 500;
+}
+
+.parent-list-item:last-child {
+  margin-bottom: 20px;
+  /* Prevent the hidden License link from causing a double bottom-border */
+  border-bottom: none;
+}
+
+.md-button-toggle .md-toggle-icon {
+  display: block;
+  margin-left: auto;
+  speak: none;
+  vertical-align: middle;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+}
+
+.md-button-toggle .md-toggle-icon.toggled {
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  margin-right: -5px !important;
+}
+
+.parent-item-list.seperator hr {
+  border: 1px solid #eeeeee !important;
+}
+
+
+/* End left navigation Menu */
+
+/************
+ * LICENSE FOOTER
+ ************/
+
+#license-footer {
+  align-self: flex-end;
+  padding: 16px 18px;
+  width: 100%;
+  text-align: left;
+  font-size: small;
+  border-top: 1px solid #ddd;
+}
+
+

@@ -1,3 +1,20 @@
 .mat-grid-tile {
   background: lightblue;
 }
+.example-card {
+  height: 100%;
+}
+.example-header-image {
+  background-image: url('https://cdn.countryflags.com/thumbs/canada/flag-3d-round-250.png');
+  background-size: cover;
+}
+.view{
+  display: flex;
+  justify-content: flex-end;
+}
+.mat-card{
+ margin: 10px;
+
+}
+
+
